@@ -1,11 +1,13 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import { useTableData } from '../composables/useTableData'
 
 const {
   simpleTableData,
   paginatedTableData,
   wideTableData,
-} = useTableData()
+  users
+} = useTableData();
 </script>
 
 <template>

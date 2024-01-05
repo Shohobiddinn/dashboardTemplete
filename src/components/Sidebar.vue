@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import { useSidebar } from '../composables/useSidebar'
+import { ref } from 'vue';
+import { useSidebar } from '../composables/useSidebar';
 
-const { isOpen } = useSidebar()
+const { isOpen } = useSidebar();
 const activeClass = ref(
-  'bg-gray-600 bg-opacity-25 text-gray-100 border-gray-100',
-)
+  'bg-gray-600 bg-opacity-25 text-gray-100 border-gray-100'
+);
 const inactiveClass = ref(
-  'border-gray-900 text-gray-500 hover:bg-gray-600 hover:bg-opacity-25 hover:text-gray-100',
-)
+  'border-gray-900 text-gray-500 hover:bg-gray-600 hover:bg-opacity-25 hover:text-gray-100'
+);
 </script>
 
 <template>
@@ -47,7 +47,9 @@ const inactiveClass = ref(
             />
           </svg>
 
-          <span class="mx-2 text-2xl font-semibold text-white">V-Dashboard</span>
+          <span class="mx-2 text-2xl font-semibold text-white"
+            >V-Dashboard</span
+          >
         </div>
       </div>
 
@@ -160,14 +162,23 @@ const inactiveClass = ref(
           :class="[$route.name === 'Cards' ? activeClass : inactiveClass]"
           to="/cards"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-5 h-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
             <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
-            <path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd" />
+            <path
+              fill-rule="evenodd"
+              d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"
+              clip-rule="evenodd"
+            />
           </svg>
 
           <span class="mx-4">Cards</span>
         </router-link>
-<!-- 
+        <!-- 
         <router-link
           class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"
           :class="[$route.name === 'Modal' ? activeClass : inactiveClass]"

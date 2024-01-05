@@ -13,6 +13,14 @@ export interface IPaginatedTableData {
   status: string
   statusColor: string
 }
+export interface User {
+  picture: string
+  name: string
+  role: string
+  created: string
+  status: string
+  statusColor: string
+}
 
 export interface IWideTableData {
   name: string
@@ -21,6 +29,15 @@ export interface IWideTableData {
   title2: string
   status: string
   role: string
+}
+const testUser: User  = {
+  picture:
+    'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&w=160&h=160&q=80',
+  name: 'Vera Carpenter',
+  role: 'Admin',
+  created: 'Jan 21, 2020',
+  status: 'No Active',
+  statusColor: 'green',
 }
 
 export function useTableData() {
@@ -69,6 +86,7 @@ export function useTableData() {
       statusColor: 'red',
     },
   ])
+  const users = ref<User>([...Array(10).keys()].map(() => testUser))
 
   const wideTableData = ref<IWideTableData[]>(
     [...Array(10).keys()].map(() => ({
@@ -85,5 +103,6 @@ export function useTableData() {
     simpleTableData,
     paginatedTableData,
     wideTableData,
+    users,
   }
 }
