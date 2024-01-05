@@ -30,7 +30,7 @@ const users = ref<User[]>([...Array(5).keys()].map(() => testUser))
 
     <div class="mt-4">
       <div class="flex flex-wrap -mx-6">
-        <div class="w-full px-6 sm:w-1/2 xl:w-1/3">
+        <div class="w-full flex-auto px-6 sm:w-1/2 xl:w-1/3">
           <div
             class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm"
           >
@@ -79,7 +79,7 @@ const users = ref<User[]>([...Array(5).keys()].map(() => testUser))
           </div>
         </div>
 
-        <div class="w-full px-6 mt-6 sm:w-1/2 xl:w-1/3 sm:mt-0">
+        <div class="w-full flex-auto px-6 mt-6 sm:w-1/2 xl:w-1/3 sm:mt-0">
           <div
             class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm"
           >
@@ -116,7 +116,7 @@ const users = ref<User[]>([...Array(5).keys()].map(() => testUser))
           </div>
         </div>
 
-        <div class="w-full px-6 mt-6 sm:w-1/2 xl:w-1/3 xl:mt-0">
+        <div class="w-full flex-auto px-6 mt-6 sm:w-1/2 xl:w-1/3 xl:mt-0">
           <div
             class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm"
           >

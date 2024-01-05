@@ -12,8 +12,8 @@ function login() {
 </script>
 
 <template>
-  <div class="flex items-center justify-center min-h-[100vh]  bg-gradient-to-r from-purple-500 to-pink-500">
-    <div class="w-full max-w-sm p-6 bg-white rounded-md shadow-md">
+  <div class="flex items-center justify-center min-h-[100vh]  bg-gradient-to-r from-sky-500 to-indigo-500">
+    <div class="w-full max-w-sm p-6 bg-white rounded-md shadow-md bg-gradient-to-r from-violet-500 to-fuchsia-500">
       <div class="flex items-center justify-center">
         <svg
           class="w-10 h-10"

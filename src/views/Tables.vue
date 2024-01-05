@@ -42,7 +42,7 @@ const {
               <tr
                 v-for="(i, index) in simpleTableData"
                 :key="index"
-                class="hover:bg-gray-200"
+                class="hover:bg-gray-200 cursor-pointer"
               >
                 <td class="px-6 py-4 text-lg text-gray-700 border-b">
                   {{ i.city }}
