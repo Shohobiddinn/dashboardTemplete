@@ -76,7 +76,7 @@ const inactiveClass = ref(
           <span class="mx-4">Dashboard</span>
         </router-link>
 
-        <router-link
+        <!-- <router-link
           class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"
           :class="[$route.name === 'UIElements' ? activeClass : inactiveClass]"
           to="/ui-elements"
@@ -106,7 +106,7 @@ const inactiveClass = ref(
           </svg>
 
           <span class="mx-4">UI Elements</span>
-        </router-link>
+        </router-link> -->
 
         <router-link
           class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"
@@ -167,7 +167,7 @@ const inactiveClass = ref(
 
           <span class="mx-4">Cards</span>
         </router-link>
-
+<!-- 
         <router-link
           class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"
           :class="[$route.name === 'Modal' ? activeClass : inactiveClass]"
@@ -180,7 +180,7 @@ const inactiveClass = ref(
           </svg>
 
           <span class="mx-4">Modal</span>
-        </router-link>
+        </router-link> -->
 
         <router-link
           class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"

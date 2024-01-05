@@ -3,8 +3,8 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
-const email = ref('johndoe@mail.com')
-const password = ref('@#!@#asdf1231!_!@#')
+const email = ref('shohobiddinibrohimov@gmail.com')
+const password = ref('dashboardtemplete')
 
 function login() {
   router.push('/dashboard')
@@ -12,7 +12,7 @@ function login() {
 </script>
 
 <template>
-  <div class="flex items-center justify-center h-screen px-6 bg-gray-200">
+  <div class="flex items-center justify-center min-h-[100vh]  bg-gradient-to-r from-purple-500 to-pink-500">
     <div class="w-full max-w-sm p-6 bg-white rounded-md shadow-md">
       <div class="flex items-center justify-center">
         <svg

@@ -23,7 +23,7 @@ const users = ref<User[]>([...Array(5).keys()].map(() => testUser))
 </script>
 
 <template>
-  <div>
+  <div >
     <h3 class="text-3xl font-medium text-gray-700">
       Dashboard
     </h3>

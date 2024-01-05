@@ -19,3 +19,6 @@
 ::-webkit-scrollbar-thumb:hover{
   background: #718096;
 }
+*,*::after,*::before{
+  user-select: none;
+}
